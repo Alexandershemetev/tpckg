@@ -1,4 +1,4 @@
 library(testthat)
-library(ProjectRGCapstone)
+library(tpckg)
 
-test_check("ProjectRGCapstone")
+test_check("tpckg")
