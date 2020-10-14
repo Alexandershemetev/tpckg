@@ -15,11 +15,11 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(ProjectRGCapstone)
+library(tpckg)
 library(knitr)
 ```
 
-The `ProjectRGCapstone` package has data from NOAA Significant Earthquakes Database, helper functions to clean and filter the data,
+The `tpckg` package has data from NOAA Significant Earthquakes Database, helper functions to clean and filter the data,
 geoms for plotting earthquake timelines and functions for plotting interactive earthquake maps.
 
 ## Data
@@ -29,7 +29,7 @@ This package uses the database from the NOAA Significant Earthquakes which conta
 To use the data
 
 ```{r, message=FALSE}
-filename <- system.file("extdata", "earthquakes.tsv.gz", package = "ProjectRGCapstone")
+filename <- system.file("extdata", "earthquakes.tsv.gz", package = "tpckg")
 earthquakes <- readr::read_delim(filename, delim = "\t")
 ```
 
